@@ -1,4 +1,4 @@
-#include "camera.hpp"
+#include "../include/camera.hpp"
 
 void Camera::draw() {
     glMatrixMode(GL_PROJECTION);

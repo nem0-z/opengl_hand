@@ -1,5 +1,5 @@
 hand:
-	g++ -o hand -I/usr/include/GL *.cpp -lGL -lGLU -lglut
+	g++ -o hand -I/usr/include/GL main.cpp src/*.cpp -lGL -lGLU -lglut
 
 .PHONY:
 	clean

@@ -1,6 +1,6 @@
-#include "model.hpp"
-#include "finger.hpp"
-#include "material.hpp"
+#include "../include/model.hpp"
+#include "../include/finger.hpp"
+#include "../include/material.hpp"
 
 Finger::Finger(float size, float *pos) {
     this->position = pos;

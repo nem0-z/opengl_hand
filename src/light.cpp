@@ -1,4 +1,4 @@
-#include "light.hpp"
+#include "../include/light.hpp"
 
 Light::Light(int light) {
     this->light = light;

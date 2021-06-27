@@ -1,12 +1,12 @@
 #include <GL/glut.h>
 #include <stdlib.h>
 
-#include "camera.hpp"
-#include "finger.hpp"
-#include "hand.hpp"
-#include "helper.hpp"
-#include "light.hpp"
-#include "model.hpp"
+#include "include/camera.hpp"
+#include "include/finger.hpp"
+#include "include/hand.hpp"
+#include "include/helper.hpp"
+#include "include/light.hpp"
+#include "include/model.hpp"
 
 GLfloat angle1 = 0.;
 GLfloat angle2 = 0.;

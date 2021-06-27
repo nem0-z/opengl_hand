@@ -1,4 +1,4 @@
-#include "material.hpp"
+#include "../include/material.hpp"
 
 void Material::setPrimary() {
     GLfloat mat_diffuse[] = {1, 0.8, 0, 1.0};

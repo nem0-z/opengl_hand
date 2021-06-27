@@ -1,6 +1,6 @@
-#include "finger.hpp"
-#include "hand.hpp"
-#include "model.hpp"
+#include "../include/finger.hpp"
+#include "../include/hand.hpp"
+#include "../include/model.hpp"
 
 Hand::Hand() {
     this->material = Material();

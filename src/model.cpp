@@ -1,4 +1,4 @@
-#include "model.hpp"
+#include "../include/model.hpp"
 
 Model::Model(float size) {
     this->size = size;
