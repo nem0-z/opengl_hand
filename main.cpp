@@ -8,10 +8,11 @@
 #include "include/light.hpp"
 #include "include/model.hpp"
 
-GLfloat angle1 = 0.;
-GLfloat angle2 = 0.;
-GLfloat angle3 = 0.;
-GLfloat rotatingAngle = 0;
+float angle1 = 0.;
+float angle2 = 0.;
+float angle3 = 0.;
+float rotatingAngle = 0;
+bool rotation = false;
 
 Helper helper;
 
@@ -86,13 +87,18 @@ void keyboardCallback(unsigned char key, int x, int y) {
         case 'c':
             helper.closeHand();
             break;
+        case 's':
+            helper.toggleRotation();
+            break;
     }
     glutPostRedisplay();
 }
 
 void idleCallback() {
-    rotatingAngle = (rotatingAngle > 360) ? 0 : rotatingAngle + 0.01;
-    glutPostRedisplay();
+    if (rotation) {
+        rotatingAngle = (rotatingAngle > 360) ? 0 : rotatingAngle + 0.05;
+        glutPostRedisplay();
+    }
 }
 
 int main(int argc, char **argv) {

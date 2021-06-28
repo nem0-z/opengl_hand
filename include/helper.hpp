@@ -2,7 +2,8 @@
 
 #include<GL/glut.h>
 
-extern float angle1, angle2, angle3, rotatingAngle;
+extern float angle1, angle2, angle3;
+extern bool rotation;
 
 class Helper {
 public:
@@ -22,5 +23,9 @@ public:
             angle2 -= 1;
         if (angle3 > 0)
             angle3 -= 1;
+    }
+
+    void toggleRotation() {
+        rotation = !rotation;
     }
 };
