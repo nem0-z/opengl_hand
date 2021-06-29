@@ -6,4 +6,5 @@ class Material {
 public:
     void setPrimary();
     void setSecondary();
+    void handTexture();
 };

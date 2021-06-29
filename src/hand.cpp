@@ -36,6 +36,7 @@ void Hand::drawDigits() {
 
 void Hand::draw() {
     material.setPrimary();
+    material.handTexture();
     drawPalm();
     drawDigits();
 }

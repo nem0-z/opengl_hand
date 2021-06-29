@@ -31,7 +31,7 @@ void init() {
     Light light = Light(GL_LIGHT0);
     float lightPosition[] = {-10.0, -2.0, 3.0, 0.0};
     float diffuseColor[] = {1, 1, 1, 1};
-    float specularColor[] = {0.5, 0.5, 0.5, 1};
+    float specularColor[] = {1, 0.5, 0.5, 1};
     light.setPosition(lightPosition);
     light.setColor(diffuseColor, specularColor);
     light.draw();
